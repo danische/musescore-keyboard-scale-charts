@@ -74,7 +74,7 @@ MuseScore {
 
    function getScaleText(scale, scaleChart) {
       let scaleText = newElement(Element.SYSTEM_TEXT);
-      scaleText.text = '<font size="10"/>' + scale.name + " " + '<font face="Keyboard Chord Diagram"/><font size="23"/>' + scaleChart + '</font><font size="10"/> (' + scale.lhFingering + ") (" + scale.rhFingering + ")";
+      scaleText.text = '<font size="10"/>' + scale.name + " " + '<font face="Keyboard Chord Diagram"/><font size="23"/>' + scaleChart + '<font size="10"/> (' + scale.lhFingering + ") (" + scale.rhFingering + ")";
       scaleText.fontSize *= 1.75;
       scaleText.placement = Placement.ABOVE;
       return scaleText;
